@@ -17,7 +17,6 @@
     }
 
     * { box-sizing: border-box; }
-
     html { scroll-behavior: smooth; }
 
     body {
@@ -97,10 +96,7 @@
     h2 { font-size: 1.6rem; margin-bottom: 0.75rem; }
     h3 { font-size: 1.2rem; margin-bottom: 0.5rem; }
 
-    p {
-      margin-top: 0.25rem;
-      margin-bottom: 0.75rem;
-    }
+    p { margin-top: 0.25rem; margin-bottom: 0.75rem; }
 
     .hero {
       display: grid;
@@ -123,10 +119,7 @@
       margin-bottom: 0.5rem;
     }
 
-    .hero-title {
-      font-size: 2.4rem;
-      margin-bottom: 0.5rem;
-    }
+    .hero-title { font-size: 2.4rem; margin-bottom: 0.5rem; }
 
     .hero-subtitle {
       font-size: 1.1rem;
@@ -134,10 +127,7 @@
       margin-bottom: 1rem;
     }
 
-    .hero p {
-      max-width: 34rem;
-      font-size: 0.98rem;
-    }
+    .hero p { max-width: 34rem; font-size: 0.98rem; }
 
     .hero-cta {
       margin-top: 1.5rem;
@@ -163,10 +153,7 @@
     .btn-primary:hover,
     .btn-primary:focus { background-color: #0b7668; }
 
-    .hero-note {
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
+    .hero-note { font-size: 0.85rem; color: var(--muted); }
 
     .hero-visual {
       background-color: #ffffff;
@@ -177,10 +164,7 @@
       font-size: 0.9rem;
     }
 
-    .hero-visual h3 {
-      margin-top: 0;
-      margin-bottom: 0.5rem;
-    }
+    .hero-visual h3 { margin-top: 0; margin-bottom: 0.5rem; }
 
     .pill {
       display: inline-flex;
@@ -195,12 +179,7 @@
       margin-bottom: 0.6rem;
     }
 
-    .hero-visual-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.35rem;
-    }
-
+    .hero-visual-row { display: flex; justify-content: space-between; margin-bottom: 0.35rem; }
     .hero-visual-label { color: var(--muted); }
     .hero-visual-value { font-weight: 600; }
 
@@ -215,10 +194,7 @@
 
     .section-header { margin-bottom: 1.5rem; }
 
-    .muted {
-      color: var(--muted);
-      font-size: 0.95rem;
-    }
+    .muted { color: var(--muted); font-size: 0.95rem; }
 
     .card-grid-3 {
       display: grid;
@@ -235,10 +211,7 @@
       box-shadow: 0 4px 10px rgba(15, 23, 42, 0.03);
     }
 
-    .card h3 {
-      margin-bottom: 0.35rem;
-      font-size: 1rem;
-    }
+    .card h3 { margin-bottom: 0.35rem; font-size: 1rem; }
 
     .tag {
       display: inline-block;
@@ -251,12 +224,7 @@
       margin-bottom: 0.3rem;
     }
 
-    .chip-list {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 0.5rem;
-    }
+    .chip-list { display: flex; flex-wrap: wrap; gap: 0.5rem; margin-top: 0.5rem; }
 
     .chip {
       padding: 0.25rem 0.6rem;
@@ -293,11 +261,7 @@
 
     tr:last-child td { border-bottom: none; }
 
-    .note {
-      margin-top: 0.5rem;
-      font-size: 0.85rem;
-      color: var(--muted);
-    }
+    .note { margin-top: 0.5rem; font-size: 0.85rem; color: var(--muted); }
 
     .timeline {
       margin-top: 1.5rem;
@@ -305,10 +269,7 @@
       padding-left: 1.25rem;
     }
 
-    .timeline-item {
-      margin-bottom: 1.1rem;
-      position: relative;
-    }
+    .timeline-item { margin-bottom: 1.1rem; position: relative; }
 
     .timeline-item::before {
       content: "";
@@ -354,16 +315,8 @@
       align-items: flex-start;
     }
 
-    .budget-breakdown {
-      margin-top: 0.75rem;
-      font-size: 0.9rem;
-    }
-
-    .budget-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 0.25rem;
-    }
+    .budget-breakdown { margin-top: 0.75rem; font-size: 0.9rem; }
+    .budget-row { display: flex; justify-content: space-between; margin-bottom: 0.25rem; }
 
     .budget-total {
       margin-top: 0.4rem;
@@ -420,10 +373,7 @@
       font-size: 0.9rem;
     }
 
-    .quick-budget h3 {
-      margin-bottom: 0.5rem;
-      font-size: 1rem;
-    }
+    .quick-budget h3 { margin-bottom: 0.5rem; font-size: 1rem; }
 
     .budget-grid {
       display: grid;
@@ -461,10 +411,51 @@
     .btn-secondary:hover,
     .btn-secondary:focus { background-color: #ecfdf5; }
 
-    .budget-result {
-      margin-top: 0.5rem;
-      font-weight: 600;
-      font-size: 0.95rem;
+    .budget-result { margin-top: 0.5rem; font-weight: 600; font-size: 0.95rem; }
+
+    /* REQUIRED: Summary + notification */
+    .page-summary{
+      background:#ffffff;
+      border:1px solid var(--border);
+      border-left:4px solid var(--accent);
+      border-radius:0.75rem;
+      padding:0.8rem 1rem;
+      margin:0.75rem 0 0.75rem;
+      font-size:0.95rem;
+    }
+
+    .page-note{
+      text-align:center;
+      font-style:italic;
+      color:var(--muted);
+      margin:0.5rem 0 1.25rem;
+    }
+
+    /* Video embed */
+    .video-block{
+      margin-top: 1.5rem;
+      background:#ffffff;
+      border:1px solid var(--border);
+      border-radius:0.9rem;
+      padding:1rem;
+    }
+
+    .video-embed{
+      position: relative;
+      width: 100%;
+      padding-top: 56.25%; /* 16:9 */
+      border-radius: 0.75rem;
+      overflow: hidden;
+      border: 1px solid var(--border);
+      background: #000;
+    }
+
+    .video-embed iframe{
+      position: absolute;
+      inset: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
     }
 
     footer {
@@ -485,50 +476,22 @@
     }
 
     @media (max-width: 900px) {
-      .hero {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
+      .hero { grid-template-columns: minmax(0, 1fr); }
       .hero-visual { order: -1; }
-
-      .two-column {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .principles-list {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-
-      .card-grid-3 {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      nav ul {
-        flex-wrap: wrap;
-        justify-content: flex-end;
-      }
+      .two-column { grid-template-columns: minmax(0, 1fr); }
+      .principles-list { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .card-grid-3 { grid-template-columns: minmax(0, 1fr); }
+      nav ul { flex-wrap: wrap; justify-content: flex-end; }
     }
 
     @media (max-width: 600px) {
       main { padding-inline: 1rem; }
-
       .hero { padding: 1.5rem 1.25rem; }
-
       .hero-title { font-size: 2rem; }
       .hero-subtitle { font-size: 1rem; }
-
-      .principles-list {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .budget-grid {
-        grid-template-columns: minmax(0, 1fr);
-      }
-
-      .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-      }
+      .principles-list { grid-template-columns: minmax(0, 1fr); }
+      .budget-grid { grid-template-columns: minmax(0, 1fr); }
+      .nav-container { flex-direction: column; align-items: flex-start; }
     }
   </style>
 </head>
@@ -570,6 +533,7 @@
           <span class="hero-note">Use this site to estimate your monthly costs.</span>
         </div>
       </div>
+
       <aside class="hero-visual" aria-label="Example monthly cost overview">
         <span class="pill">Example monthly fixed costs</span>
         <h3>Example: first-year student in a medium-sized city</h3>
@@ -596,12 +560,14 @@
       </aside>
     </div>
 
+    <p class="page-summary"><strong>Summary:</strong> FairDeal Student helps students compare key monthly costs before signing contracts.</p>
+    <p class="page-note">This website is a learning project created in the Writing for Digital Media course at LAB University of Applied Sciences/LUT University</p>
+
     <div class="section-header">
       <h2>Who is this for?</h2>
-      <p class="muted">
-        Short examples of typical users.
-      </p>
+      <p class="muted">Short examples of typical users.</p>
     </div>
+
     <div class="card-grid-3">
       <div class="card">
         <span class="tag">New city</span>
@@ -620,9 +586,7 @@
     <section aria-labelledby="compare-heading" style="margin-top:3rem;">
       <div class="section-header">
         <h2 id="compare-heading">What you can compare</h2>
-        <p class="muted">
-          The four main contract types in this project.
-        </p>
+        <p class="muted">The four main contract types in this project.</p>
       </div>
       <div class="card">
         <div class="chip-list" aria-label="Comparison categories">
@@ -641,9 +605,12 @@
       <h2 id="about-heading">About FairDeal Student</h2>
     </div>
 
+    <p class="page-summary"><strong>Summary:</strong> Our story explains why we built FairDeal Student and what problem it solves for students.</p>
+    <p class="page-note">This website is a learning project created in the Writing for Digital Media course at LAB University of Applied Sciences/LUT University</p>
+
     <article>
       <p>
-        As a team of money-conscious students, we came together with one shared goal: to make the real cost of student life visible before you sign anything. 
+        As a team of money-conscious students, we came together with one shared goal: to make the real cost of student life visible before you sign anything.
       </p>
       <p>
         Our CEO, Rami Rantanen, first noticed this problem while working as a salesperson for mobile plans and related services. Day after day he watched students walk up to different stands from the big three and receive completely different prices for almost identical contracts. The cheapest deals were never shown online only offered over the counter.
@@ -661,7 +628,7 @@
 
       <h3>2023: The AI leap and a major challenge</h3>
       <p>
-        In 2023 we decided to scale up. We implemented AI tools to help us scan publicly available offers, student campaigns and Reddit discussions and combined this with the prices we observed at physical stands. 
+        In 2023 we decided to scale up. We implemented AI tools to help us scan publicly available offers, student campaigns and Reddit discussions and combined this with the prices we observed at physical stands.
       </p>
       <p>
         Our transparency, however, was not welcomed by everyone. Six months later, the three largest telecom companies challenged our work legally, arguing that publishing detailed comparisons of their offers was unfair.
@@ -716,9 +683,7 @@
       </p>
 
       <h4>What is FairDeal Student?</h4>
-      <p>
-        FairDeal Student is a student-run comparison service that tracks real-time prices for:
-      </p>
+      <p>FairDeal Student is a student-run comparison service that tracks real-time prices for:</p>
       <ul>
         <li>Mobile plans</li>
         <li>Home insurance</li>
@@ -772,175 +737,161 @@
       <h2 id="guides-heading">Cost Guides for Students</h2>
     </div>
 
-    <p>
-      These guides show example costs. Always check real prices from providers before signing.
-    </p>
+    <p class="page-summary"><strong>Summary:</strong> Use these tables to compare typical student costs for rent, electricity, mobile plans, and home insurance.</p>
+    <p class="page-note">This website is a learning project created in the Writing for Digital Media course at LAB University of Applied Sciences/LUT University</p>
 
-    <!-- Mobile plans -->
+    <!-- Added video -->
+    <div class="video-block" aria-labelledby="howto-video-heading">
+      <h3 id="howto-video-heading">How to use the guide (video)</h3>
+      <div class="video-embed">
+        <iframe
+          src="https://www.youtube.com/embed/WPm9_GzE1K0"
+          title="FairDeal Student - How to use the guide"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen>
+        </iframe>
+      </div>
+    </div>
+
+    <p>These guides show example costs. Always check real prices from providers before signing.</p>
+
     <section aria-labelledby="mobile-heading" style="margin-top:2.5rem;">
       <h3 id="mobile-heading">Mobile plans</h3>
-      <p>
-        Example student mobile plans.
-      </p>
+      <p>Example student mobile plans.</p>
       <table aria-label="Example mobile plans for students">
         <thead>
-        <tr>
-          <th>Plan name</th>
-          <th>Data (per month)</th>
-          <th>Monthly price</th>
-          <th>Contract length</th>
-          <th>Notes</th>
-        </tr>
+          <tr>
+            <th>Plan name</th>
+            <th>Data (per month)</th>
+            <th>Monthly price</th>
+            <th>Contract length</th>
+            <th>Notes</th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Student Lite</td>
-          <td>10 GB</td>
-          <td>€14.90</td>
-          <td>No fixed term</td>
-          <td>Example light user plan.</td>
-        </tr>
-        <tr>
-          <td>Campus Unlimited</td>
-          <td>Unlimited (10 Mbps)</td>
-          <td>€21.90</td>
-          <td>12 months</td>
-          <td>Example unlimited plan.</td>
-        </tr>
-        <tr>
-          <td>5G Power Student</td>
-          <td>Unlimited (5G)</td>
-          <td>€28.90</td>
-          <td>24 months</td>
-          <td>Example high-speed plan.</td>
-        </tr>
+          <tr>
+            <td>Student Lite</td>
+            <td>10 GB</td>
+            <td>€14.90</td>
+            <td>No fixed term</td>
+            <td>Example light user plan.</td>
+          </tr>
+          <tr>
+            <td>Campus Unlimited</td>
+            <td>Unlimited (10 Mbps)</td>
+            <td>€21.90</td>
+            <td>12 months</td>
+            <td>Example unlimited plan.</td>
+          </tr>
+          <tr>
+            <td>5G Power Student</td>
+            <td>Unlimited (5G)</td>
+            <td>€28.90</td>
+            <td>24 months</td>
+            <td>Example high-speed plan.</td>
+          </tr>
         </tbody>
       </table>
-      <p class="note">
-        You can change these names and prices to match your own examples.
-      </p>
+      <p class="note">You can change these names and prices to match your own examples.</p>
     </section>
 
-    <!-- Home insurance -->
     <section aria-labelledby="insurance-heading" style="margin-top:2.5rem;">
       <h3 id="insurance-heading">Home insurance</h3>
-      <p>
-        Example home insurance packages.
-      </p>
+      <p>Example home insurance packages.</p>
       <table aria-label="Example home insurance packages for students">
         <thead>
-        <tr>
-          <th>Package</th>
-          <th>Approx. monthly price</th>
-          <th>What it typically covers</th>
-        </tr>
+          <tr>
+            <th>Package</th>
+            <th>Approx. monthly price</th>
+            <th>What it typically covers</th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Basic</td>
-          <td>€5–8</td>
-          <td>Fire and major water damage.</td>
-        </tr>
-        <tr>
-          <td>Standard</td>
-          <td>€8–12</td>
-          <td>Basic + better coverage for electronics.</td>
-        </tr>
-        <tr>
-          <td>Comprehensive</td>
-          <td>€12–18</td>
-          <td>Wider accidental damage and travel cover.</td>
-        </tr>
+          <tr>
+            <td>Basic</td>
+            <td>€5–8</td>
+            <td>Fire and major water damage.</td>
+          </tr>
+          <tr>
+            <td>Standard</td>
+            <td>€8–12</td>
+            <td>Basic + better coverage for electronics.</td>
+          </tr>
+          <tr>
+            <td>Comprehensive</td>
+            <td>€12–18</td>
+            <td>Wider accidental damage and travel cover.</td>
+          </tr>
         </tbody>
       </table>
     </section>
 
-    <!-- Rent & housing costs -->
     <section aria-labelledby="rent-heading" style="margin-top:2.5rem;">
       <h3 id="rent-heading">Rent &amp; housing costs</h3>
       <div class="two-column">
         <div>
-          <p>
-            Example ranges for student rents.
-          </p>
+          <p>Example ranges for student rents.</p>
           <table aria-label="Example student rent ranges">
             <thead>
-            <tr>
-              <th>Type</th>
-              <th>Medium-sized city</th>
-              <th>Capital region</th>
-            </tr>
+              <tr>
+                <th>Type</th>
+                <th>Medium-sized city</th>
+                <th>Capital region</th>
+              </tr>
             </thead>
             <tbody>
-            <tr>
-              <td>Studio / 1-room flat</td>
-              <td>€430–650</td>
-              <td>€650–900</td>
-            </tr>
-            <tr>
-              <td>Room in shared flat</td>
-              <td>€280–450</td>
-              <td>€420–650</td>
-            </tr>
+              <tr>
+                <td>Studio / 1-room flat</td>
+                <td>€430–650</td>
+                <td>€650–900</td>
+              </tr>
+              <tr>
+                <td>Room in shared flat</td>
+                <td>€280–450</td>
+                <td>€420–650</td>
+              </tr>
             </tbody>
           </table>
         </div>
+
         <aside class="box" aria-label="Example monthly housing budget for one student">
           <strong>Example monthly housing budget</strong>
           <div class="budget-breakdown">
-            <div class="budget-row">
-              <span>Rent (studio)</span>
-              <span>€520</span>
-            </div>
-            <div class="budget-row">
-              <span>Water fee</span>
-              <span>€20</span>
-            </div>
-            <div class="budget-row">
-              <span>Electricity</span>
-              <span>€35</span>
-            </div>
-            <div class="budget-row">
-              <span>Internet</span>
-              <span>€20</span>
-            </div>
-            <div class="budget-total">
-              <span>Total</span>
-              <span>≈ €595 / month</span>
-            </div>
+            <div class="budget-row"><span>Rent (studio)</span><span>€520</span></div>
+            <div class="budget-row"><span>Water fee</span><span>€20</span></div>
+            <div class="budget-row"><span>Electricity</span><span>€35</span></div>
+            <div class="budget-row"><span>Internet</span><span>€20</span></div>
+            <div class="budget-total"><span>Total</span><span>≈ €595 / month</span></div>
           </div>
         </aside>
       </div>
     </section>
 
-    <!-- Electricity -->
     <section aria-labelledby="electricity-heading" style="margin-top:2.5rem;">
       <h3 id="electricity-heading">Electricity plans</h3>
-      <p>
-        Example electricity contracts.
-      </p>
+      <p>Example electricity contracts.</p>
       <table aria-label="Example electricity contracts">
         <thead>
-        <tr>
-          <th>Contract type</th>
-          <th>Unit price (energy)</th>
-          <th>Basic fee</th>
-          <th>Notes</th>
-        </tr>
+          <tr>
+            <th>Contract type</th>
+            <th>Unit price (energy)</th>
+            <th>Basic fee</th>
+            <th>Notes</th>
+          </tr>
         </thead>
         <tbody>
-        <tr>
-          <td>Fixed Student 12</td>
-          <td>€0.15 / kWh</td>
-          <td>€3.90 / month</td>
-          <td>Fixed price for one year.</td>
-        </tr>
-        <tr>
-          <td>Market Flex</td>
-          <td>Spot + €0.03 / kWh</td>
-          <td>€2.90 / month</td>
-          <td>Price follows market.</td>
-        </tr>
+          <tr>
+            <td>Fixed Student 12</td>
+            <td>€0.15 / kWh</td>
+            <td>€3.90 / month</td>
+            <td>Fixed price for one year.</td>
+          </tr>
+          <tr>
+            <td>Market Flex</td>
+            <td>Spot + €0.03 / kWh</td>
+            <td>€2.90 / month</td>
+            <td>Price follows market.</td>
+          </tr>
         </tbody>
       </table>
     </section>
@@ -952,6 +903,9 @@
       <h2 id="howto-heading">How to Use FairDeal Student</h2>
     </div>
 
+    <p class="page-summary"><strong>Summary:</strong> Follow these steps to estimate your monthly costs and check if you are overpaying.</p>
+    <p class="page-note">This website is a learning project created in the Writing for Digital Media course at LAB University of Applied Sciences/LUT University</p>
+
     <ol class="steps-list">
       <li>
         <p>Open the Cost Tracker.</p>
@@ -961,7 +915,6 @@
           This brings you to the main cost overview.
         </p>
       </li>
-
       <li>
         <p>Choose your city and housing type.</p>
         <p>
@@ -970,7 +923,6 @@
           internet ranges for that choice.
         </p>
       </li>
-
       <li>
         <p>Check the contract benchmarks.</p>
         <p>
@@ -979,7 +931,6 @@
           comparison table.
         </p>
       </li>
-
       <li>
         <p>Enter what you currently pay.</p>
         <p>
@@ -988,7 +939,6 @@
           the common student range.
         </p>
       </li>
-
       <li>
         <p>Estimate your yearly saving.</p>
         <p>
@@ -996,7 +946,6 @@
           student-level contract. This helps you see immediately whether it is worth switching.
         </p>
       </li>
-
       <li>
         <p>Follow the switching guide.</p>
         <p>
@@ -1004,7 +953,6 @@
           for chatting or calling providers, including which questions to ask and which fees to check.
         </p>
       </li>
-
       <li>
         <p>Review and update.</p>
         <p>
@@ -1016,9 +964,7 @@
 
     <div class="quick-budget" aria-labelledby="budget-widget-heading">
       <h3 id="budget-widget-heading">Quick monthly budget calculator</h3>
-      <p class="note">
-        Enter your own numbers to see a total.
-      </p>
+      <p class="note">Enter your own numbers to see a total.</p>
       <div class="budget-grid">
         <div>
           <label for="rent-input">Rent (€ / month)</label>
@@ -1042,14 +988,16 @@
     </div>
   </section>
 
-  <!-- SURVEY RESULTS (PLACEHOLDER ONLY) -->
+  <!-- SURVEY RESULTS -->
   <section id="survey" aria-labelledby="survey-heading">
     <div class="section-header">
       <h2 id="survey-heading">Student Survey Insights</h2>
     </div>
-    <p>
-      Survey results will be added here after data is collected.
-    </p>
+
+    <p class="page-summary"><strong>Summary:</strong> This page will show student survey results after data is collected.</p>
+    <p class="page-note">This website is a learning project created in the Writing for Digital Media course at LAB University of Applied Sciences/LUT University</p>
+
+    <p>Survey results will be added here after data is collected.</p>
   </section>
 </main>
 
@@ -1081,8 +1029,7 @@
     if (total === 0) {
       resultEl.textContent = 'Please enter at least one cost to see your total.';
     } else {
-      resultEl.textContent = 'Your estimated monthly total for these items is approximately € ' +
-        total.toFixed(2);
+      resultEl.textContent = 'Your estimated monthly total for these items is approximately € ' + total.toFixed(2);
     }
   });
 </script>
